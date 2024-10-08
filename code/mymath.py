@@ -9,8 +9,7 @@ def sinc2d(x, y):
     elif y == 0:
         return m.sin(x)/x
     else:
-        return (m.sin(x)/x)*(m.sin(y)/y)
-
+	return (m.cos(x-y) + m.cos(x+y))/(x*y)
 
 def addone(x):
     return x+1
